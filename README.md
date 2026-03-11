@@ -152,7 +152,16 @@ You can copy the Markdown content below and save it as your `README.md` file.
 ---
 
 
-# 🇫🇷 AI-Powered French Flashcard App
+Voici la version française du `README.md`. Elle conserve la structure professionnelle et met en valeur toutes les superbes fonctionnalités full-stack de votre projet !
+
+Vous pouvez copier le contenu Markdown ci-dessous pour créer votre fichier `README.md`.
+
+---
+
+
+
+
+# 🇫🇷 Application de Flashcards de Français propulsée par l'IA
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
@@ -160,143 +169,142 @@ You can copy the Markdown content below and save it as your `README.md` file.
 ![JavaScript](https://img.shields.io/badge/javascript-ES6%2B-yellow)
 ![FSRS](https://img.shields.io/badge/algorithm-FSRS-orange)
 
-This is a full-stack French flashcard learning application. By combining the automated card-creation capabilities of the **Google Gemini multimodal LLM** with the cutting-edge **FSRS (Free Spaced Repetition Scheduler)** algorithm, it provides a one-stop solution for French learners—from capturing new vocabulary to achieving permanent retention.
+Il s'agit d'une application full-stack d'apprentissage du français par flashcards (cartes mémoires). En combinant les capacités de création automatisée du grand modèle de langage **Google Gemini (IA multimodale)** avec l'algorithme de pointe **FSRS (Free Spaced Repetition Scheduler)**, elle offre une solution tout-en-un pour les apprenants de français — de la capture de nouveau vocabulaire jusqu'à la mémorisation permanente.
 
-## ✨ Core Features
+## ✨ Fonctionnalités Principales
 
-### 🧠 1. AI-Powered Smart Card Generation (via Gemini 2.5 Flash)
-- **Multimodal Input:** Supports uploading screenshots of French textbooks or direct text input.
-- **Smart Extraction:** Automatically performs OCR and extracts key vocabulary, highlighted expressions, or contextual phrases from images.
-- **Comprehensive Parsing:** Automatically generates pure French definitions, synonyms, authentic Simplified Chinese translations, and real-world bilingual context sentences (EX1, EX2).
+### 🧠 1. Génération Intelligente de Cartes par l'IA (via Gemini 2.5 Flash)
+- **Entrée multimodale :** Prend en charge le téléchargement de captures d'écran de manuels de français ou la saisie directe de texte.
+- **Extraction intelligente :** Effectue automatiquement une reconnaissance optique de caractères (OCR) et extrait le vocabulaire clé, les expressions surlignées ou les phrases en contexte à partir d'images.
+- **Analyse complète :** Génère automatiquement des définitions en français pur, des synonymes, des traductions authentiques en chinois simplifié, et des phrases d'exemples bilingues en contexte réel (EX1, EX2).
 
-### 📈 2. Advanced FSRS Spaced Repetition Engine
-- Utilizes the native `fsrs.js` (WebAssembly) module, offering more efficient and precise memory scheduling than traditional Anki (SM-2).
-- Built-in rating system: **Again**, **Hard**, **Good**, **Easy**.
+### 📈 2. Moteur de Répétition Espacée Avancé (FSRS)
+- Utilise le module natif `fsrs.js` (WebAssembly), offrant une planification de la mémoire plus efficace et précise que le traditionnel Anki (SM-2).
+- Système d'évaluation intégré : **À revoir (Again)**, **Difficile (Hard)**, **Bon (Good)**, **Facile (Easy)**.
 
-### ⏱️ 3. Gamified Focus & Motivation Timer
-- Built-in Pomodoro-style focus timer directly on the study interface.
-- Supports dynamic target time adjustments and triggers **visual particle celebration effects** upon reaching daily goals.
-- Locally records your highest records and streaks, accompanied by daily motivational quotes.
+### ⏱️ 3. Minuteur de Concentration Ludifié
+- Minuteur de concentration style "Pomodoro" intégré directement sur l'interface d'apprentissage.
+- Prend en charge l'ajustement dynamique du temps cible et déclenche des **effets visuels de particules (célébration)** lorsque l'objectif quotidien est atteint.
+- Enregistre localement vos records et vos séries d'apprentissage, accompagnés de citations motivantes quotidiennes.
 
-### 📝 4. Immersive "Review Mode" (Daily Recap)
-- A dedicated overlay view designed for daily reviews.
-- **Global Scan Mode:** Use shortcuts to instantly hide/reveal the "Definition", "Context", or "Translation" across all cards for quick self-testing.
-- **Smart Auto-Centering:** The currently focused card always stays in the center of the screen when navigating with the up/down arrow keys.
+### 📝 4. Mode "Révision du Jour" Immersif
+- Une vue superposée (overlay) spécialement conçue pour les révisions quotidiennes.
+- **Mode balayage global :** Utilisez des raccourcis pour masquer/afficher instantanément la "Définition", le "Contexte" ou la "Traduction" sur toutes les cartes pour une auto-évaluation rapide.
+- **Centrage automatique intelligent :** La carte actuellement ciblée reste toujours au centre de l'écran lors de la navigation avec les flèches haut/bas.
 
-### 🔄 5. Seamless Two-Way Sync & Data Persistence
-- **Local-First:** Learning progress is saved in the browser's `LocalStorage` in real-time, ensuring offline availability and zero latency.
-- **Backend Sync:** One-click sync to push learning data to the Python backend and persist it into an Excel database.
-- **Automated Build Pipeline:** After the backend processes new vocabulary, it automatically triggers Python and Node.js scripts to rebuild the frontend JSON data source.
-
----
-
-## 🛠️ Tech Stack
-
-- **Backend:** Python, Flask, Pandas, Openpyxl, Google Generative AI (Gemini API)
-- **Frontend:** Vanilla JavaScript (ES Modules), HTML5, CSS3
-- **Core Algorithm:** FSRS (Free Spaced Repetition Scheduler) WASM
-- **Data Storage:** Excel (`.xlsx`) as the primary database, Local Storage (`LocalStorage`), JSON (Read-only frontend data source)
+### 🔄 5. Synchronisation Bidirectionnelle et Persistance des Données
+- **Priorité au local (Local-First) :** La progression de l'apprentissage est sauvegardée en temps réel dans le `LocalStorage` du navigateur, garantissant une disponibilité hors ligne.
+- **Synchronisation Backend :** Synchronisez en un clic vos données d'apprentissage vers le backend Python pour les sauvegarder durablement dans une base de données Excel.
+- **Pipeline de compilation automatisé :** Une fois que le backend a traité le nouveau vocabulaire, il déclenche automatiquement des scripts Python et Node.js pour reconstruire la source de données JSON du frontend.
 
 ---
 
-## 🚀 Quick Start
+## 🛠️ Stack Technique
 
-### 1. Clone the Repository
+- **Backend :** Python, Flask, Pandas, Openpyxl, Google Generative AI (API Gemini)
+- **Frontend :** JavaScript Natif (Modules ES), HTML5, CSS3
+- **Algorithme Principal :** FSRS (Free Spaced Repetition Scheduler) WASM
+- **Stockage des Données :** Excel (`.xlsx`) comme base de données principale, Stockage Local (`LocalStorage`), JSON (Source de données frontend en lecture seule)
+
+---
+
+## 🚀 Démarrage Rapide
+
+### 1. Cloner le Dépôt
 ```bash
-git clone https://github.com/yourusername/french-flashcard-app.git
+git clone https://github.com/tiannxp/An-application-for-memoring-the-French-Vocabulaires-with-FSRS
 cd french-flashcard-app
 ```
 
-### 2. Backend Environment Setup
-Ensure you have Python 3.8+ installed.
+### 2. Configuration de l'environnement Backend
+Assurez-vous d'avoir installé Python 3.8+.
 ```bash
-# Install Python dependencies
+# Installer les dépendances Python
 pip install flask flask-cors pandas openpyxl google-generativeai
 ```
 
-**Configure API Key & Paths:**
-1. Get your Google Gemini API Key and set it as an environment variable:
-   - Windows (CMD): `set GEMINI_API_KEY="your_api_key_here"`
-   - macOS/Linux: `export GEMINI_API_KEY="your_api_key_here"`
-2. Open `app.py` and modify `EXCEL_FILE_PATH` to point to your local Excel file path:
+**Configurer la clé API & les chemins :**
+1. Obtenez votre clé API Google Gemini et définissez-la comme variable d'environnement :
+   - Windows (CMD) : `set GEMINI_API_KEY="votre_cle_api_ici"`
+   - macOS/Linux : `export GEMINI_API_KEY="votre_cle_api_ici"`
+2. Ouvrez `app.py` et modifiez `EXCEL_FILE_PATH` pour pointer vers le chemin local de votre fichier Excel :
    ```python
-   EXCEL_FILE_PATH = r"Your_Absolute_Path/french_app_data.xlsx"
+   EXCEL_FILE_PATH = r"Votre_Chemin_Absolu/french_app_data.xlsx"
    ```
 
-### 3. Frontend Environment Setup
-Ensure you have [Node.js](https://nodejs.org/) installed.
+### 3. Configuration de l'environnement Frontend
+Assurez-vous d'avoir installé [Node.js](https://nodejs.org/).
 ```bash
-# Install Node dependencies (mainly to fetch fsrs.js and run build scripts)
+# Installer les dépendances Node (principalement pour obtenir fsrs.js et exécuter les scripts de build)
 npm install
 ```
 
-### 4. Run the Application
-**Start the Flask Backend Server:**
+### 4. Lancer l'Application
+**Démarrer le serveur Backend (Flask) :**
 ```bash
 python app.py
 ```
-**Start the Frontend:**
-You can use the `Live Server` extension in VS Code, or use Python's built-in simple HTTP server in the project root directory:
+**Démarrer le Frontend :**
+Vous pouvez utiliser l'extension `Live Server` dans VS Code, ou utiliser le serveur HTTP simple intégré à Python dans le répertoire racine du projet :
 ```bash
 python -m http.server 8000
 ```
-Then visit `http://localhost:8000` in your browser to start learning!
+Ensuite, visitez `http://localhost:8000` dans votre navigateur pour commencer à apprendre !
 
 ---
 
-## ⌨️ Keyboard Shortcuts Guide
+## ⌨️ Guide des Raccourcis Clavier
 
-To provide a seamless learning experience, this project is highly optimized for full keyboard navigation:
+Afin d'offrir une expérience d'apprentissage fluide, ce projet est hautement optimisé pour une navigation entièrement au clavier :
 
-### Main Learning Interface
-- `Space`: Flip card to show the answer / Rate as "Good"
-- `1, 2, 3, 4`: Rate as Again, Hard, Good, and Easy respectively
-- `Q`: Open/Close the Examples overlay
-- `` ` `` (Backquote): Undo / Go back to the previous card
+### Interface d'Apprentissage Principale
+- `Espace (Space)` : Retourner la carte pour voir la réponse / Évaluer comme "Bon (Good)"
+- `1, 2, 3, 4` : Évaluer respectivement comme À revoir, Difficile, Bon, Facile
+- `Q` : Ouvrir/Fermer l'interface des Exemples
+- `` ` `` (Accent grave) : Annuler / Revenir à la carte précédente
 
-### Daily Review Mode
-- `↑ / ↓`: Navigate up/down through the review list (auto-centers)
-- `← / →`: Step-by-step reveal of definition, context, translation, and examples for a single card
-- `,` (Comma): Globally toggle the display of **Definitions** for all cards
-- `.` (Period): Globally toggle the display of **Contexts** for all cards
-- `/` (Slash): Globally toggle the display of **Translations** for all cards
-- `Esc`: Close the Review overlay or Examples overlay
+### Mode Révision du Jour
+- `↑ / ↓` : Naviguer vers le haut/bas dans la liste de révision (centrage automatique)
+- `← / →` : Révéler étape par étape la définition, le contexte, la traduction et les exemples pour une seule carte
+- `, (Virgule)` : Basculer globalement l'affichage des **Définitions** pour toutes les cartes
+- `. (Point)` : Basculer globalement l'affichage des **Contextes** pour toutes les cartes
+- `/ (Barre oblique)` : Basculer globalement l'affichage des **Traductions** pour toutes les cartes
+- `Échap (Esc)` : Fermer l'interface de Révision ou l'interface des Exemples
 
 ---
 
-## 📁 Core Project Structure
+## 📁 Structure du Projet
 
 ```text
-├── app.py                      # Flask main entry (API, Gemini calls, Excel read/write)
-├── script.js                   # Frontend main logic (FSRS scheduling, Timer, Shortcuts, UI)
-├── index.html                  # Main UI layout
-├── styles.css                  # Stylesheets (Includes particle effects & responsive layout)
-├── french_app_data.xlsx        # Main Excel Database
-├── data_frontend.json          # Compiled frontend question bank (Auto-generated by scripts)
+├── app.py                      # Entrée principale Flask (API, appels Gemini, lecture/écriture Excel)
+├── script.js                   # Logique principale Frontend (FSRS, Minuteur, Raccourcis, UI)
+├── index.html                  # Interface utilisateur principale
+├── styles.css                  # Feuilles de style (inclut les animations de particules)
+├── french_app_data.xlsx        # Base de données Excel principale
+├── data_frontend.json          # Banque de questions frontend compilée (générée automatiquement)
 ├── scripts/
-│   ├── build_structured_json.py # Script: Converts Excel to structured JSON
-│   └── prepare_frontend_data.js # Script: Bundles frontend data
-└── node_modules/               # Frontend dependencies (fsrs.js, etc.)
+│   ├── build_structured_json.py # Script : Convertit Excel en JSON structuré
+│   └── prepare_frontend_data.js # Script : Regroupe les données frontend
+└── node_modules/               # Dépendances Frontend (fsrs.js, etc.)
 ```
 
 ---
 
-## 🤝 Contributing
+## 🤝 Contribuer
 
-Issues and Pull Requests are welcome to make this project even better!
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Les *Issues* et les *Pull Requests* sont les bienvenues pour améliorer ce projet !
+1. Forkez le projet
+2. Créez votre branche de fonctionnalité (`git checkout -b feature/SuperFonctionnalite`)
+3. Commitez vos changements (`git commit -m 'Ajout d'une SuperFonctionnalite'`)
+4. Poussez vers la branche (`git push origin feature/SuperFonctionnalite`)
+5. Ouvrez une Pull Request
 
-## 📄 License
+## 📄 Licence
 
-Distributed under the [MIT License](LICENSE).
+Distribué sous la licence [MIT License](LICENSE).
 
 ---
-*Note: This project is not just a coding exercise, but a foreign language learning tool used in real life every day. Hope it helps you on your language journey too!*
-
+*Note : Ce projet n'est pas seulement un exercice de code, mais un véritable outil d'apprentissage de langues étrangères utilisé quotidiennement. En espérant qu'il vous aide également dans votre aventure linguistique !*
 
 
 
@@ -352,7 +360,7 @@ Distributed under the [MIT License](LICENSE).
 
 ### 1. 克隆项目
 ```bash
-git clone git clone https://github.com/tiannxp/An-application-for-memoring-the-French-Vocabulaires-with-FSRS
+git clone https://github.com/tiannxp/An-application-for-memoring-the-French-Vocabulaires-with-FSRS
 cd french-flashcard-app
 ```
 
