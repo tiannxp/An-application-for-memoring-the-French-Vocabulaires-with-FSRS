@@ -143,16 +143,13 @@ Distributed under the [MIT License](LICENSE).
 
 ---
 *Note: This project is not just a coding exercise, but a foreign language learning tool used in real life every day. Hope it helps you on your language journey too!*
-```
 
-这是一份为您量身定制的、专业且排版精美的 GitHub `README.md` 中文文档。它结合了您提供的前端（Vue/纯JS + FSRS算法 + 专注计时器）和后端（Flask + Gemini多模态AI + Excel数据库）代码的功能特点。
 
-您可以直接复制以下 Markdown 内容，并在您的项目根目录中创建/覆盖 `README.md` 文件。
 
----
 
-```markdown
-# 🇫🇷 AI-Powered French Flashcard App (AI 驱动的法语闪卡学习系统)
+
+# AI-Powered French Flashcard App (AI 驱动的法语闪卡学习系统)
+
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
