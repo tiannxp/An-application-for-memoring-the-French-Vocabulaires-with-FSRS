@@ -145,10 +145,162 @@ Distributed under the [MIT License](LICENSE).
 *Note: This project is not just a coding exercise, but a foreign language learning tool used in real life every day. Hope it helps you on your language journey too!*
 
 
+Here is the English version of the `README.md`. It maintains the professional layout and highlights all the fantastic full-stack features of your project!
+
+You can copy the Markdown content below and save it as your `README.md` file.
+
+---
+
+
+# 🇫🇷 AI-Powered French Flashcard App
+
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![Flask](https://img.shields.io/badge/flask-latest-green)
+![JavaScript](https://img.shields.io/badge/javascript-ES6%2B-yellow)
+![FSRS](https://img.shields.io/badge/algorithm-FSRS-orange)
+
+This is a full-stack French flashcard learning application. By combining the automated card-creation capabilities of the **Google Gemini multimodal LLM** with the cutting-edge **FSRS (Free Spaced Repetition Scheduler)** algorithm, it provides a one-stop solution for French learners—from capturing new vocabulary to achieving permanent retention.
+
+## ✨ Core Features
+
+### 🧠 1. AI-Powered Smart Card Generation (via Gemini 2.5 Flash)
+- **Multimodal Input:** Supports uploading screenshots of French textbooks or direct text input.
+- **Smart Extraction:** Automatically performs OCR and extracts key vocabulary, highlighted expressions, or contextual phrases from images.
+- **Comprehensive Parsing:** Automatically generates pure French definitions, synonyms, authentic Simplified Chinese translations, and real-world bilingual context sentences (EX1, EX2).
+
+### 📈 2. Advanced FSRS Spaced Repetition Engine
+- Utilizes the native `fsrs.js` (WebAssembly) module, offering more efficient and precise memory scheduling than traditional Anki (SM-2).
+- Built-in rating system: **Again**, **Hard**, **Good**, **Easy**.
+
+### ⏱️ 3. Gamified Focus & Motivation Timer
+- Built-in Pomodoro-style focus timer directly on the study interface.
+- Supports dynamic target time adjustments and triggers **visual particle celebration effects** upon reaching daily goals.
+- Locally records your highest records and streaks, accompanied by daily motivational quotes.
+
+### 📝 4. Immersive "Review Mode" (Daily Recap)
+- A dedicated overlay view designed for daily reviews.
+- **Global Scan Mode:** Use shortcuts to instantly hide/reveal the "Definition", "Context", or "Translation" across all cards for quick self-testing.
+- **Smart Auto-Centering:** The currently focused card always stays in the center of the screen when navigating with the up/down arrow keys.
+
+### 🔄 5. Seamless Two-Way Sync & Data Persistence
+- **Local-First:** Learning progress is saved in the browser's `LocalStorage` in real-time, ensuring offline availability and zero latency.
+- **Backend Sync:** One-click sync to push learning data to the Python backend and persist it into an Excel database.
+- **Automated Build Pipeline:** After the backend processes new vocabulary, it automatically triggers Python and Node.js scripts to rebuild the frontend JSON data source.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Backend:** Python, Flask, Pandas, Openpyxl, Google Generative AI (Gemini API)
+- **Frontend:** Vanilla JavaScript (ES Modules), HTML5, CSS3
+- **Core Algorithm:** FSRS (Free Spaced Repetition Scheduler) WASM
+- **Data Storage:** Excel (`.xlsx`) as the primary database, Local Storage (`LocalStorage`), JSON (Read-only frontend data source)
+
+---
+
+## 🚀 Quick Start
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/french-flashcard-app.git
+cd french-flashcard-app
+```
+
+### 2. Backend Environment Setup
+Ensure you have Python 3.8+ installed.
+```bash
+# Install Python dependencies
+pip install flask flask-cors pandas openpyxl google-generativeai
+```
+
+**Configure API Key & Paths:**
+1. Get your Google Gemini API Key and set it as an environment variable:
+   - Windows (CMD): `set GEMINI_API_KEY="your_api_key_here"`
+   - macOS/Linux: `export GEMINI_API_KEY="your_api_key_here"`
+2. Open `app.py` and modify `EXCEL_FILE_PATH` to point to your local Excel file path:
+   ```python
+   EXCEL_FILE_PATH = r"Your_Absolute_Path/french_app_data.xlsx"
+   ```
+
+### 3. Frontend Environment Setup
+Ensure you have [Node.js](https://nodejs.org/) installed.
+```bash
+# Install Node dependencies (mainly to fetch fsrs.js and run build scripts)
+npm install
+```
+
+### 4. Run the Application
+**Start the Flask Backend Server:**
+```bash
+python app.py
+```
+**Start the Frontend:**
+You can use the `Live Server` extension in VS Code, or use Python's built-in simple HTTP server in the project root directory:
+```bash
+python -m http.server 8000
+```
+Then visit `http://localhost:8000` in your browser to start learning!
+
+---
+
+## ⌨️ Keyboard Shortcuts Guide
+
+To provide a seamless learning experience, this project is highly optimized for full keyboard navigation:
+
+### Main Learning Interface
+- `Space`: Flip card to show the answer / Rate as "Good"
+- `1, 2, 3, 4`: Rate as Again, Hard, Good, and Easy respectively
+- `Q`: Open/Close the Examples overlay
+- `` ` `` (Backquote): Undo / Go back to the previous card
+
+### Daily Review Mode
+- `↑ / ↓`: Navigate up/down through the review list (auto-centers)
+- `← / →`: Step-by-step reveal of definition, context, translation, and examples for a single card
+- `,` (Comma): Globally toggle the display of **Definitions** for all cards
+- `.` (Period): Globally toggle the display of **Contexts** for all cards
+- `/` (Slash): Globally toggle the display of **Translations** for all cards
+- `Esc`: Close the Review overlay or Examples overlay
+
+---
+
+## 📁 Core Project Structure
+
+```text
+├── app.py                      # Flask main entry (API, Gemini calls, Excel read/write)
+├── script.js                   # Frontend main logic (FSRS scheduling, Timer, Shortcuts, UI)
+├── index.html                  # Main UI layout
+├── styles.css                  # Stylesheets (Includes particle effects & responsive layout)
+├── french_app_data.xlsx        # Main Excel Database
+├── data_frontend.json          # Compiled frontend question bank (Auto-generated by scripts)
+├── scripts/
+│   ├── build_structured_json.py # Script: Converts Excel to structured JSON
+│   └── prepare_frontend_data.js # Script: Bundles frontend data
+└── node_modules/               # Frontend dependencies (fsrs.js, etc.)
+```
+
+---
+
+## 🤝 Contributing
+
+Issues and Pull Requests are welcome to make this project even better!
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+Distributed under the [MIT License](LICENSE).
+
+---
+*Note: This project is not just a coding exercise, but a foreign language learning tool used in real life every day. Hope it helps you on your language journey too!*
 
 
 
-# AI-Powered French Flashcard App (AI 驱动的法语闪卡学习系统)
+
+# 🇨🇳 AI-Powered French Flashcard App (AI 驱动的法语闪卡学习系统)
 
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
