@@ -50,7 +50,7 @@ This is a full-stack French flashcard learning application. By combining the aut
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/french-flashcard-app.git
+git clone https://github.com/tiannxp/An-application-for-memoring-the-French-Vocabulaires-with-FSRS
 cd french-flashcard-app
 ```
 
@@ -200,7 +200,7 @@ Distributed under the [MIT License](LICENSE).
 
 ### 1. 克隆项目
 ```bash
-git clone https://github.com/yourusername/french-flashcard-app.git
+git clone git clone https://github.com/tiannxp/An-application-for-memoring-the-French-Vocabulaires-with-FSRS
 cd french-flashcard-app
 ```
 
@@ -293,8 +293,3 @@ python -m http.server 8000
 
 ---
 *注：本项目不仅是一个代码练习，更是每天真实使用的外语学习工具。愿它也能帮到正在学习语言的你！*
-```
-
-### 💡 额外建议：
-1. **替换占位符**：记得把 `https://github.com/yourusername/french-flashcard-app.git` 替换成您真实的 GitHub 仓库地址。
-2. **添加演示截图**：强烈建议您在 GitHub 仓库中建一个 `assets` 或 `images` 文件夹，放几张界面的截图（比如主界面、打字特效、复习列表界面），然后在 README 的顶部或特性介绍处使用 `![screenshot](./assets/ui.png)` 插入图片，这会让你的项目看起来非常有吸引力！
