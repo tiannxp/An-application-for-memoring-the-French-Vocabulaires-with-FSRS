@@ -79,7 +79,7 @@ This project is under active development, and suggestions are welcome! The follo
 
 ## 📸 App Preview
 
-> 👇 **Please add your app screenshots here**
+> 👇
 > *<img width="2848" height="1666" alt="cardA" src="https://github.com/user-attachments/assets/a4fde32f-33e5-474d-911b-ce290e6cea14" />*
 > *<img width="2840" height="1638" alt="cardB" src="https://github.com/user-attachments/assets/13bd56cd-a10a-4496-a748-0e403d65a44e" />*
 > *<img width="2828" height="1654" alt="cardC" src="https://github.com/user-attachments/assets/862338fd-e70e-426b-8a29-0bd13cad9d85" />*
@@ -168,7 +168,7 @@ Ce projet est en développement actif et les suggestions sont les bienvenues ! L
 
 ## 📸 Aperçu de l'Application
 
-> 👇 **Veuillez ajouter vos captures d'écran de l'application ici**
+> 👇 
 > *<img width="2848" height="1666" alt="cardA" src="https://github.com/user-attachments/assets/a4fde32f-33e5-474d-911b-ce290e6cea14" />*
 > *<img width="2840" height="1638" alt="cardB" src="https://github.com/user-attachments/assets/13bd56cd-a10a-4496-a748-0e403d65a44e" />*
 > *<img width="2828" height="1654" alt="cardC" src="https://github.com/user-attachments/assets/862338fd-e70e-426b-8a29-0bd13cad9d85" />*
@@ -258,7 +258,7 @@ Ce projet est en développement actif et les suggestions sont les bienvenues ! L
 
 ## 📸 界面预览
 
-> 👇 **请在此处添加您的应用截图**
+> 👇 
 > *<img width="2848" height="1666" alt="cardA" src="https://github.com/user-attachments/assets/a4fde32f-33e5-474d-911b-ce290e6cea14" />*
 > *<img width="2840" height="1638" alt="cardB" src="https://github.com/user-attachments/assets/13bd56cd-a10a-4496-a748-0e403d65a44e" />*
 > *<img width="2828" height="1654" alt="cardC" src="https://github.com/user-attachments/assets/862338fd-e70e-426b-8a29-0bd13cad9d85" />*
